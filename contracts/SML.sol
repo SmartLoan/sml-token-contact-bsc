@@ -4,12 +4,12 @@ pragma solidity >=0.4.22 <0.9.0;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0/contracts/token/ERC20/ERC20.sol";
 
 /**
- * @title PineappleToke
+ * @title SmartLoanToke
  * @author Asvoria Kuan<asvoria@live.com>
  * @dev Use solidity compiler version 0.8.1
  */
 
-contract PINE is ERC20 {
+contract SML is ERC20 {
     
     enum stages {
         STAGE_INIT,
@@ -23,8 +23,8 @@ contract PINE is ERC20 {
     
     int[] public interest_rates = [-20,-10,0,10,20];
     
-    string public token_name = "PineappleToken";    //Generated
-    string public token_symbol = "PINE";            //Generated
+    string public token_name = "SmartLoanToken";    //Generated
+    string public token_symbol = "SML";            //Generated
     
     uint256 public token_borrow = 1000;                   //User key in data, this will be multiplied
     uint256 public loan_duration = 1095 days;           //User key in data, 3 years
